@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+.container {
+  display: flex;
+  border: 1px solid black;
+  margin: 20px;
+  max-width: 100vw;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-tesk {
+  width: 40%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input {
+  width: 465px;
+  padding: 8px;
+  border: 1px solid #c7c7c7;
+  font-size: 13px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.descrpition {
+  width: 92%;
+  padding: 5px 0px;
+}
+.descrpition-textarea {
+  width: 465px;
+  padding: 8px;
+  height: 100px;
+}
+
+.title-conten {
+  padding: 8px 0px;
+}
+.date-piority {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+}
+
+.piority {
+  width: 45%;
+}
+.form-select {
+  width: 100%;
+  padding: 5px;
+}
+
+.button-add {
+  width: 480px !important;
+  margin: 50px 0px !important;
+  background-color: #258000b0 !important;
+}
+
+/* to do list */
+
+.container-toDoList {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.input-listToDo {
+  width: 580px;
+  padding: 8px;
+  border: 1px solid #c7c7c7;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+.show-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.buttom-detial {
+  width: 100px;
+  background-color: #00b8ff !important;
+  font-size: 11px !important;
+  margin-right: 10px !important;
+}
+
+.button-remove {
+  width: 100px;
+  background-color: #d72306a6 !important;
+  font-size: 11px !important;
+  margin-right: 10px !important;
+}
+
+.list-task-todo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 38px;
+  border: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.date-piority-listToDo {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.action {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ededed;
+  width: 100% !important;
+  margin-bottom: 0px;
+  align-items: center;
+  height: 100px;
+  border-radius: 3px !important;
+  margin-top: 20px;
+  color: #9d8282;
+}
+
+.action-button {
+  display: flex;
+}
+
+.action-button-done {
+  width: 100px;
+  background-color: #00b8ff !important;
+  margin-right: 10px !important;
+}
+
+.action-button-remove {
+  width: 100px;
+  background-color: #d72306a6 !important;
+  margin-right: 10px !important;
+}
+
+.bulk-action {
+  margin: 0px 20px;
+}
+
+.input-detial {
+  width: 465px;
+  padding: 8px;
+  border: 1px solid #c7c7c7;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+/* err  */
+
+.err {
+  color: #d72306a6; 
+  font-size: 11px;
 }
